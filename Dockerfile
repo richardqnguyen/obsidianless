@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Download Obsidian AppImage
-RUN wget -q "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.4/Obsidian-1.12.4.AppImage" -O /opt/obsidian.AppImage \
+RUN wget -q "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.7/Obsidian-1.13.7.AppImage" -O /opt/obsidian.AppImage \
     && chmod +x /opt/obsidian.AppImage \
     && cd /opt && /opt/obsidian.AppImage --appimage-extract \
     && mv /opt/squashfs-root /opt/obsidian \
